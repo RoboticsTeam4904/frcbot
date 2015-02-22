@@ -1,17 +1,18 @@
 {
-  "name": "trebekbot",
-  "description": "A Jeopardy! bot for Slack.",
+  "name": "frcbot",
+  "description": "A Jeopardy! style FRC bot for Slack.",
   "keywords": [
     "slack",
     "bot",
-    "jeopardy"
+    "jeopardy",
+    "frc"
   ],
-  "repository": "https://github.com/gesteves/trebekbot",
+  "repository": "https://github.com/RoboticsTeam4904/frcbot",
   "addons": [
     "rediscloud",
     "papertrail"
   ],
-  "success_url": "https://github.com/gesteves/trebekbot#usage",
+  "success_url": "https://github.com/RoboticsTeam4904/frcbot#usage",
   "env": {
     "OUTGOING_WEBHOOK_TOKEN": {
       "description": "The token of the Slack outgoing webhook you'll use for this. Set it up at https://slack.com/services/new/outgoing-webhook. You'll have to point it to this app's URL once it's deployed.",
@@ -24,7 +25,7 @@
     "BOT_USERNAME": {
       "description": "The trigger word you set for the outgoing webhook.",
       "required": true,
-      "value": "trebekbot"
+      "value": "frcbot"
     },
     "SIMILARITY_THRESHOLD": {
       "description": "From 0 to 1, how similar user answers need to be to the actual answer to be accepted. 1 means exact match; lower values give users some margin for error (e.g typos) but could cause false positives.",
@@ -34,7 +35,7 @@
     "SECONDS_TO_ANSWER": {
       "description": "Time, in seconds, users have to answer each round.",
       "required": true,
-      "value": "30"
+      "value": "45"
     },
     "CHANNEL_BLACKLIST": {
       "description": "Comma-separated list of channel names in which this bot is not allowed to respond",
